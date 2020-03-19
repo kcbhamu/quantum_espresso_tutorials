@@ -23,8 +23,8 @@ for i in range(len(energies)):
         CBMkpaths.append(kpaths[i])
 
 print("VBM energy = ",max(VBMenergies), " eV")
-print("VBM kpath coordinate = ",VBMkpaths[VBMenergies.index(max(VBMenergies))])
+print("VBM k-point number and coordinate = ", kpaths.index(VBMkpaths[VBMenergies.index(max(VBMenergies))])+1, " ", VBMkpaths[VBMenergies.index(max(VBMenergies))])
 print("CBM energy = ",min(CBMenergies), " eV")
-print("CBM kpath coordinate = ",CBMkpaths[CBMenergies.index(min(CBMenergies))])
+print("CBM k-point number and coordinate = ", kpaths.index(CBMkpaths[CBMenergies.index(min(CBMenergies))])+1, " ", CBMkpaths[CBMenergies.index(min(CBMenergies))])
 print("Bandgap energy = ",min(CBMenergies)-max(VBMenergies), " eV")
 
